@@ -1,9 +1,9 @@
 version: '3.5'
 
 services:
-  sbrw-app:
-    image: gitlab.blokaly/springboot-rest-websocket:latest
-    container_name: sbrw
+  cfc-server:
+    image: github.blokaly/currencyfair-challenge-server
+    container_name: cfc-server
     environment:
       - PROFILE_NAME=production
     network_mode: "host"
