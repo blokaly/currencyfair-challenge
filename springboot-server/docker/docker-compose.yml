@@ -1,0 +1,10 @@
+version: '3.5'
+
+services:
+  sbrw-app:
+    image: gitlab.blokaly/springboot-rest-websocket:latest
+    container_name: sbrw
+    environment:
+      - PROFILE_NAME=production
+    network_mode: "host"
+    restart: unless-stopped
